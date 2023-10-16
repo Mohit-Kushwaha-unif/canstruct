@@ -1,0 +1,2273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Construction Cost estimator</title>
+    <meta name="title" content="Construction cost estimator">
+    <meta name="description"
+        content="Canstruct is a construction company doing house construction, building construction, commercial construction. Canstruct offers the best house construction services starting at Rs 1900/sft.">
+    <meta name="keywords"
+        content=" Construction Services, Home construction, Home build, Building construction, Best construction service in Noida">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <link rel="icon" href="images/title_32x32.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/uniqueModal.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script>
+        !function () {
+            var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+                analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"]; analytics.factory = function (e) { return function () { var t = Array.prototype.slice.call(arguments); t.unshift(e); analytics.push(t); return analytics } }; for (var e = 0; e < analytics.methods.length; e++) { var key = analytics.methods[e]; analytics[key] = analytics.factory(key) } analytics.load = function (key, e) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(t, n); analytics._loadOptions = e }; analytics.SNIPPET_VERSION = "4.13.1";
+                analytics.load("qFLGqwgr0wwy7LfsWPyuPZcN3YKQObYn");
+                analytics.page();
+            }
+        }();
+    </script>
+    <!-- Add this before your scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt="logo" width="160">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="ti-menu"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item justify-content-end"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav align-items-center">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="project.html">Our Projects</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="cost_estimator.html">Cost Estimator</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html#howitwork">How it Works</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        More
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="about.html">About Us</a>
+                                        <a class="dropdown-item" href="join_professional.html">Join us as a
+                                            professional</a>
+                                    </div>
+                                </li>
+
+                                <li class="d-none d-lg-block">
+                                    <a class="btn_4" href="contact.html"
+                                        style=" box-shadow: 5px 5px #888888;padding: 11.5px 33px;    margin-left: 75px;background-color:#f9b700;font-weight: bold;color: #112327;">LET'S
+                                        BUILD</a>
+
+                                </li>
+                                <!-- <div class="vl"></div> -->
+                                <li class="nav-item" id="number">
+                                    <a class="nav-link" href="tel:91-9560-680-737">+91 9560-680-737</a>
+                                </li>
+                                <li class="nav-item" id="contactus">
+                                    <a class="nav-link" href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="nav">
+        <a href="index.html" class="nav__link">
+            <i class="material-icons nav__icon">dashboard</i>
+            <span class="nav__text">Home</span>
+        </a>
+        <a href="project.html" class="nav__link">
+            <i class="material-icons nav__icon">home</i>
+            <span class="nav__text">Our Project</span>
+        </a>
+        <a href="contact.html" class="nav__link">
+            <i class="material-icons nav__icon">handyman</i>
+            <span class="nav__text">Lets Build</span>
+        </a>
+        <a href="#" class="nav__link nav__link--active">
+            <i class="material-icons nav__icon">account_balance_wallet</i>
+            <span class="nav__text">Cost Estimator</span>
+        </a>
+        <a href="more.html" class="nav__link">
+            <i class="material-icons nav__icon">read_more</i>
+            <span class="nav__text">More</span>
+        </a>
+    </nav>
+    <!-- Header part end-->
+    <section class="padding_bottom" style="width:100%">
+        <!-- <div class="container padding_top cost-calculate_heading">
+            <h2 class="font_family_oswald">Cost Estimator</h2>
+            <p>Our experts will get back to you within 12 hours. Choose the type of construction below.</p>
+        </div> -->
+        <div class="row padding_top" style="width:100%;margin: 0px;">
+            <div class="center_heading">
+                <div class="section_tittle">
+                    <h2>construction cost in Noida</h2>
+                    <h4>Our experts will get back to you within 12 hours. Choose the type of construction below.</h4>
+                </div>
+                <div class="section_detail">
+                </div>
+            </div>
+            <div class="container">
+                <div class="site-small-container">
+                    <form class="mt-2 form form-two-col-web" autocomplete="off">
+                        <div class="form__group">
+                            <h3 style="background-color: #fff;">Noida</h3><label for="city"
+                                class="form__label">City*</label>
+                        </div>
+                        <div class="form__group input-with-select">
+                            <div class="input-wrapper"><input type="number" id="area" min="0" class="form__field"
+                                    placeholder="Super Built Up Area (sq.ft)*"><label for="area"
+                                    class="form__label">Super
+                                    Built Up
+                                    Area (sq.ft)*</label></div>
+                        </div>
+                        <div class="form__group"><select name="noOfCarParking" id="noOfCarParking" class="form__field">
+                                <option value="0">00</option>
+                                <option selected="" value="1">01</option>
+                                <option value="2">02</option>
+                                <option value="3">03</option>
+                                <option value="4">04</option>
+                            </select><label for="noOfCarParking" class="form__label">No Of Car Parking (130
+                                sq.ft/unit)*</label></div>
+                        <div class="form__group">
+                            <div class="input-wrapper"><input type="number" min="0" id="areaOfBalconyAndUtility"
+                                    class="form__field" placeholder="Balcony &amp; Utility Area (sq.ft)*"><label
+                                    for="areaOfBalconyAndUtility" class="form__label">Balcony
+                                    &amp; Utility Area
+                                    (sq.ft)*</label></div>
+                        </div>
+                        <div class="wrong_input hidden">
+                            <p>*Sum of Car parking and Balcony & Utility area cannot exceed Super built up area</p>
+                        </div>
+                        <div class="form__action__btns"><a href="javascript:;" id="openUniqueModal"
+                                class="btn_1">Estimate
+                                Cost<span class="icon-arrow-right"></span></a></div>
+                    </form>
+
+                </div>
+            </div>
+    </section>
+
+    <section class="section_padding cost_estimator hidden">
+        <div class="container">
+            <h2 class="section-tittle center_heading font_family_oswald">Your Cost Estimate</h2>
+            <div class="your-cost-estimate__row row">
+                <div class="your-cost-estimate__col col col-sm-12 col-md-12 col-lg-4"><a href="Javascript:;"
+                        class="d-block">
+                        <p class="your-cost-estimate__col__title">Budget Package - ₹&nbsp;1,900/sq.ft</p>
+                        <div class="your-cost-estimate__col__details">
+                            <ul class="list">
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Built Up Cost</strong>
+                                        <p class="small"><span id="build_up1">770</span> sq.ft * ₹&nbsp;1,900/sq.ft</p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Budget_Build_up">11,81,950</span></strong></div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Car Parking Cost</strong>
+                                        <p class="small">
+                                            <span id="car_parking1">1</span> * 130 sq.ft * ₹&nbsp;921/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Budget_Car">1,19,730</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Balcony &amp; Utility Cost</strong>
+                                        <p class="small"><span id="balcony_cost1">100</span> sq.ft * ₹&nbsp;921/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Budget_Balcony">92,100</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Total Cost</strong></div>
+                                    <div class="list-item bottom-line__col"><strong class="total text-primary"><span
+                                                id="Budget_total">13,93,780</span></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a></div>
+                <div class="your-cost-estimate__col col col-sm-12 col-md-12 col-lg-4"><a href="Javascript:;"
+                        class="d-block">
+                        <p class="your-cost-estimate__col__title">Basic Package - ₹&nbsp;2000/sq.ft</p>
+                        <div class="your-cost-estimate__col__details">
+                            <ul class="list">
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Built Up Cost</strong>
+                                        <p class="small"><span id="build_up2">770</span> sq.ft * ₹&nbsp;2000/sq.ft</p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Basic_Build_up">15,40,000</span></strong></div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Car Parking Cost</strong>
+                                        <p class="small">
+                                            <span id="car_parking2">1</span> * 130 sq.ft * ₹&nbsp;990/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Basic_Car">1,19,730</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Balcony &amp; Utility Cost</strong>
+                                        <p class="small"><span id="balcony_cost2">100</span> sq.ft * ₹&nbsp;990/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Basic_Balcony">92,100</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Total Cost</strong></div>
+                                    <div class="list-item bottom-line__col"><strong class="total text-primary"><span
+                                                id="Basic_total">13,93,780</span></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a></div>
+                <div class="your-cost-estimate__col col col-sm-12 col-md-12 col-lg-4"><a href="Javascript:;"
+                        class="d-block">
+                        <p class="your-cost-estimate__col__title">Classic Package - ₹&nbsp;2,120/sq.ft</p>
+                        <div class="your-cost-estimate__col__details">
+                            <ul class="list">
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Built Up Cost</strong>
+                                        <p class="small"><span id="build_up3">770</span> sq.ft * ₹&nbsp;2,120/sq.ft</p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Classic_Build_up">11,81,950</span></strong></div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Car Parking Cost</strong>
+                                        <p class="small">
+                                            <span id="car_parking3">1</span> * 130 sq.ft * ₹&nbsp;1,059/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Classic_Car">1,19,730</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Balcony &amp; Utility Cost</strong>
+                                        <p class="small"><span id="balcony_cost3">100</span> sq.ft * ₹&nbsp;1,059/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Classic_Balcony">92,100</span></strong></div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Total Cost</strong></div>
+                                    <div class="list-item bottom-line__col"><strong class="total text-primary"><span
+                                                id="Classic_total">13,93,780</span></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a></div>
+                <div class="your-cost-estimate__col col col-sm-12 col-md-12 col-lg-4"><a href="Javascript:;"
+                        class="d-block">
+                        <p class="your-cost-estimate__col__title">Premium Package - ₹&nbsp;2,220/sq.ft</p>
+                        <div class="your-cost-estimate__col__details">
+                            <ul class="list">
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Built Up Cost</strong>
+                                        <p class="small"><span id="build_up4">770</span> sq.ft * ₹&nbsp;2,220sq.ft</p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Premium_Build_up">11,81,950</span></strong></div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Car Parking Cost</strong>
+                                        <p class="small">
+                                            <span id="car_parking4">1</span> * 130 sq.ft * ₹&nbsp;1,119/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Premium_Car">1,19,730</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Balcony &amp; Utility Cost</strong>
+                                        <p class="small"><span id="balcony_cost4">100</span> sq.ft * ₹&nbsp;1,119/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Premium_Balcony">92,100</span></strong></div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Total Cost</strong></div>
+                                    <div class="list-item bottom-line__col"><strong class="total text-primary"><span
+                                                id="Premium_total">13,93,780</span></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a></div>
+                <div class="your-cost-estimate__col col col-sm-12 col-md-12 col-lg-4"><a href="Javascript:;"
+                        class="d-block">
+                        <p class="your-cost-estimate__col__title">Royal Package - ₹&nbsp;2,350/sq.ft</p>
+                        <div class="your-cost-estimate__col__details">
+                            <ul class="list">
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Built Up Cost</strong>
+                                        <p class="small"><span id="build_up5">770</span> sq.ft * ₹&nbsp;2,350/sq.ft</p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Royal_Build_up">11,81,950</span></strong></div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Car Parking Cost</strong>
+                                        <p class="small">
+                                            <span id="car_parking5">1</span> * 130 sq.ft * ₹&nbsp;1,194/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Royal_Car">1,19,730</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Balcony &amp; Utility Cost</strong>
+                                        <p class="small"><span id="balcony_cost5">100</span> sq.ft * ₹&nbsp;1,194/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Royal_Balcony">92,100</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Total Cost</strong></div>
+                                    <div class="list-item bottom-line__col"><strong class="total text-primary"><span
+                                                id="Royal_total">13,93,780</span></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a></div>
+                <div class="your-cost-estimate__col col col-sm-12 col-md-12 col-lg-4"><a href="Javascript:;"
+                        class="d-block">
+                        <p class="your-cost-estimate__col__title">Imperia Package - ₹&nbsp;2,500/sq.ft</p>
+                        <div class="your-cost-estimate__col__details">
+                            <ul class="list">
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Built Up Cost</strong>
+                                        <p class="small"><span id="build_up6">770</span> sq.ft * ₹&nbsp;2,500/sq.ft</p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Imperia_Build_up">11,81,950</span></strong></div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Car Parking Cost</strong>
+                                        <p class="small">
+                                            <span id="car_parking6">1</span> * 130 sq.ft * ₹&nbsp;1,290/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Imperia_Car">1,19,730</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Balcony &amp; Utility Cost</strong>
+                                        <p class="small"><span id="balcony_cost6">100</span> sq.ft * ₹&nbsp;1,290/sq.ft
+                                        </p>
+                                    </div>
+                                    <div class="list-item bottom-line__col"><strong><span
+                                                id="Imperia_Balcony">92,100</span></strong>
+                                    </div>
+                                </li>
+                                <li class="list-item bottom-line">
+                                    <div class="list-item bottom-line__col"><strong>Total Cost</strong></div>
+                                    <div class="list-item bottom-line__col"><strong class="total text-primary"><span
+                                                id="Imperia_total">13,93,780</span></strong></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="compare-packages" class="section_padding background_yellow">
+        <div class="container">
+            <div class="section-tittle">
+                <h2 class="center_heading font_family_oswald">Compare Packages</h2>
+            </div>
+            <div class="site-small-container">
+                <div class="compare-package-wrapper">
+                    <div class="compare-package-select">
+                        <div class="form__row">
+                            <div class="form__group">
+                                <div class="selectric-wrapper selectric-form__field selectric-hover">
+                                    <div class="selectric-hide-select selectric-is-native"><select
+                                            onchange="comparePackage()" name="compare-one" id="compare-one"
+                                            class="form__field" tabindex="-1">
+                                            <option value="Budget Package" data-title="Budget Package">
+                                                ₹&nbsp;1,900/sq.ft - Budget Package</option>
+                                            <option value="Basic Package" data-title="Basic Package" disabled="">
+                                                ₹&nbsp;2,000/sq.ft - Basic Package</option>
+                                            <option value="Classic Package" data-title="Classic Package">
+                                                ₹&nbsp;2,120/sq.ft - Classic Package</option>
+                                            <option value="Premium Package" data-title="Premium Package">
+                                                ₹&nbsp;2,220/sq.ft - Premium Package</option>
+                                            <option value="Royale Package" data-title="Royale Package">
+                                                ₹&nbsp;2,350/sq.ft - Royale Package</option>
+                                            <option value="Imperia Package" data-title="Imperia Package">
+                                                ₹&nbsp;2,500/sq.ft - Imperia Package</option>
+                                        </select></div>
+                                    <input class="selectric-input" readonly="">
+                                </div><input class="selectric-input" readonly=""><input class="selectric-input"
+                                    readonly="">
+                                <label id="form__label1">Budget Package</label>
+                            </div>
+                            <div class="form__group">
+                                <div class="selectric-wrapper selectric-form__field selectric-hover">
+                                    <div class="selectric-hide-select selectric-is-native"><select
+                                            onchange="comparePackage()" name="compare-two" id="compare-two"
+                                            class="form__field" tabindex="-1">
+                                            <option value="Budget Package" data-title="Budget Package" disabled>
+                                                ₹&nbsp;1,900/sq.ft - Budget Package</option>
+                                            <option value="Basic Package" data-title="Basic Package">
+                                                ₹&nbsp;2,000/sq.ft
+                                                - Basic Package</option>
+                                            <option value="Classic Package" data-title="Classic Package">
+                                                ₹&nbsp;2,120/sq.ft - Classic Package</option>
+                                            <option value="Premium Package" data-title="Premium Package">
+                                                ₹&nbsp;2,220/sq.ft - Premium Package</option>
+                                            <option value="Royale Package" data-title="Royale Package">
+                                                ₹&nbsp;2,350/sq.ft - Royale Package</option>
+                                            <option value="Imperia Package" data-title="Imperia Package">
+                                                ₹&nbsp;2,500/sq.ft - Imperia Package</option>
+                                        </select></div>
+
+                                    <input class="selectric-input" readonly="">
+                                </div><input class="selectric-input" readonly=""><input class="selectric-input"
+                                    readonly=""><label id="form__label2">Basic Package</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xl-12">
+                        <div class="single_feature">
+                            <div class="compare-package-main">
+                                <!-- <h3>Budget Package - <br>₹ 1,535/sq.ft</h3> -->
+                                <div class="panel-group wrap" id="accordion" role="tablist"
+                                    aria-multiselectable="false">
+                                    <div class="panel">
+                                        <div class="panel-heading" role="tab" id="headingOne">
+                                            <h4 class="panel-title">
+                                                <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                                    href="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Designs & Drawings
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingOne">
+                                            <div class="panel-body row">
+                                                <div class="package-container-1">
+                                                    <ul class="list budgetD">
+                                                        <li class="list-item bottom-line">2D Floor Plan</li>
+                                                        <li class="list-item bottom-line">Basic Elevation</li>
+                                                        <li class="list-item bottom-line">Structural Design</li>
+                                                    </ul>
+                                                    <ul class="list basicD hidden">
+                                                        <li class="list-item bottom-line">2D Floor Plan</li>
+                                                        <li class="list-item bottom-line">3D Elevation</li>
+                                                        <li class="list-item bottom-line">Structural Design</li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">2D Floor Plan</li>
+                                                        <li class="list-item bottom-line">3D Elevation</li>
+                                                        <li class="list-item bottom-line">Structural Design</li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">2D Floor Plan</li>
+                                                        <li class="list-item bottom-line">3D Elevation</li>
+                                                        <li class="list-item bottom-line">Structural Design</li>
+                                                        <li class="list-item bottom-line">Electrical Drawings</li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">2D Floor Plan</li>
+                                                        <li class="list-item bottom-line">3D Elevation</li>
+                                                        <li class="list-item bottom-line">Structural Design</li>
+                                                        <li class="list-item bottom-line">Electrical Drawings</li>
+                                                        <li class="list-item bottom-line">Plumbing Drawings</li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">2D Floor Plan</li>
+                                                        <li class="list-item bottom-line">3D Elevation</li>
+                                                        <li class="list-item bottom-line">Structural Design</li>
+                                                        <li class="list-item bottom-line">Electrical Drawings</li>
+                                                        <li class="list-item bottom-line">Plumbing Drawings</li>
+                                                        <li class="list-item bottom-line">Furniture plan</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="package-container-2">
+                                                    <ul class="list budgetD hidden">
+                                                        <li class="list-item bottom-line">2D Floor Plan</li>
+                                                        <li class="list-item bottom-line">Basic Elevation</li>
+                                                        <li class="list-item bottom-line">Structural Design</li>
+                                                    </ul>
+                                                    <ul class="list basicD">
+                                                        <li class="list-item bottom-line">2D Floor Plan</li>
+                                                        <li class="list-item bottom-line">3D Elevation</li>
+                                                        <li class="list-item bottom-line">Structural Design</li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">2D Floor Plan</li>
+                                                        <li class="list-item bottom-line">3D Elevation</li>
+                                                        <li class="list-item bottom-line">Structural Design</li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">2D Floor Plan</li>
+                                                        <li class="list-item bottom-line">3D Elevation</li>
+                                                        <li class="list-item bottom-line">Structural Design</li>
+                                                        <li class="list-item bottom-line">Electrical Drawings</li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">2D Floor Plan</li>
+                                                        <li class="list-item bottom-line">3D Elevation</li>
+                                                        <li class="list-item bottom-line">Structural Design</li>
+                                                        <li class="list-item bottom-line">Electrical Drawings</li>
+                                                        <li class="list-item bottom-line">Plumbing Drawings</li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">2D Floor Plan</li>
+                                                        <li class="list-item bottom-line">3D Elevation</li>
+                                                        <li class="list-item bottom-line">Structural Design</li>
+                                                        <li class="list-item bottom-line">Electrical Drawings</li>
+                                                        <li class="list-item bottom-line">Plumbing Drawings</li>
+                                                        <li class="list-item bottom-line">Furniture plan</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of panel -->
+
+                                    <div class="panel">
+                                        <div class="panel-heading" role="tab" id="headingTwo">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    Structure
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingTwo">
+                                            <div class="panel-body row">
+                                                <div class="package-container-1">
+                                                    <ul class="list budgetD">
+
+                                                        <li class="list-item bottom-line">Steel - Sunvik, Meenakshi,
+                                                            Kamdhenu or equivalent</li>
+                                                        <li class="list-item bottom-line">Aggregates - 20mm &amp; 40mm
+                                                        </li>
+                                                        <li class="list-item bottom-line">Blocks - Standard Solid
+                                                            Concrete blocks. 6 inch 4 inch</li>
+                                                        <li class="list-item bottom-line">Cement - Dalmia, Coromandel or
+                                                            Zuari or equivalent (Portland Pozzolona Cement) </li>
+                                                        <li class="list-item bottom-line">M sand for Blockwork &amp;
+                                                            Plastering</li>
+                                                        <li class="list-item bottom-line">RCC Design Mix - As per the
+                                                            structural designer's recommendation</li>
+                                                        <li class="list-item bottom-line">Dr.Fixit Waterproofing</li>
+                                                        <li class="list-item bottom-line">Ceiling Height - 10 feet
+                                                            (Finished Floor level to Finished Floor level)
+                                                    </ul>
+                                                    <ul class="list basicD hidden">
+                                                        <li class="list-item bottom-line">Steel - Sunvik, Meenakshi,
+                                                            Kamdhenu or equivalent</li>
+                                                        <li class="list-item bottom-line">Aggregates - 20mm &amp; 40mm
+                                                        </li>
+                                                        <li class="list-item bottom-line">Blocks - Standard Solid
+                                                            Concrete blocks. 6 inch 4 inch</li>
+                                                        <li class="list-item bottom-line">Cement- ACC, Birla or
+                                                            equivalent (Portland Pozzolona Cement) <br></br>
+                                                        </li>
+                                                        <li class="list-item bottom-line">M sand for Blockwork &amp;
+                                                            Plastering</li>
+                                                        <li class="list-item bottom-line">RCC Design Mix - As per the
+                                                            structural designer's recommendation</li>
+                                                        <li class="list-item bottom-line">Dr.Fixit Waterproofing</li>
+                                                        <li class="list-item bottom-line">Ceiling Height - 10 feet
+                                                            (Finished Floor level to Finished Floor level)
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Steel - JSW steel or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Aggregates - 20mm &amp; 40mm
+                                                        </li>
+                                                        <li class="list-item bottom-line">Blocks - Standard Solid
+                                                            Concrete blocks. 6 inch 4 inch</li>
+                                                        <li class="list-item bottom-line">Cement - ACC, Birla or
+                                                            equivalent of Grade (Portland Pozzolona cement)<br></br>
+                                                        </li>
+                                                        <li class="list-item bottom-line">M sand for Blockwork &amp;
+                                                            Plastering</li>
+                                                        <li class="list-item bottom-line">RCC Design Mix - As per the
+                                                            structural designer's recommendation</li>
+                                                        <li class="list-item bottom-line">Dr.Fixit Waterproofing</li>
+                                                        <li class="list-item bottom-line">Ceiling Height - 10 feet
+                                                            (Finished Floor level to Finished Floor level)
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Steel - JSW steel or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Aggregates - 20mm &amp; 40mm
+                                                        </li>
+                                                        <li class="list-item bottom-line">Blocks - Standard Solid
+                                                            Concrete blocks. 6 inch 4 inch</li>
+                                                        <li class="list-item bottom-line">Cement - ACC, Birla or
+                                                            equivalent (Portland Pozzolona Cement)<br></br> </li>
+                                                        <li class="list-item bottom-line">M sand for Blockwork &amp;
+                                                            Plastering</li>
+                                                        <li class="list-item bottom-line">RCC Design Mix - As per the
+                                                            structural designer's recommendation</li>
+                                                        <li class="list-item bottom-line">Dr.Fixit Waterproofing</li>
+                                                        <li class="list-item bottom-line">Ceiling Height - 10 feet
+                                                            (Finished Floor level to Finished Floor level)
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Steel - JSW steel or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Aggregates - 20mm &amp; 40mm
+                                                        </li>
+                                                        <li class="list-item bottom-line">Blocks - Standard Solid
+                                                            Concrete blocks. 6 inch 4 inch</li>
+                                                        <li class="list-item bottom-line">Cement - ACC, Birla or
+                                                            equivalent of Grade (Portland Pozzolonza Cement)<br></br>
+                                                        </li>
+                                                        <li class="list-item bottom-line">M sand for Blockwork &amp;
+                                                            Plastering</li>
+                                                        <li class="list-item bottom-line">RCC Design Mix - As per the
+                                                            structural designer's recommendation</li>
+                                                        <li class="list-item bottom-line">Dr.Fixit Waterproofing</li>
+                                                        <li class="list-item bottom-line">Ceiling Height - 10 feet
+                                                            (Finished Floor level to Finished Floor level)
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Steel - JSW steel or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Aggregates - 20mm &amp; 40mm
+                                                        </li>
+                                                        <li class="list-item bottom-line">Blocks - Standard Solid
+                                                            Concrete blocks. 6 inch 4 inch</li>
+                                                        <li class="list-item bottom-line">Cement - ACC, Birla or
+                                                            equivalent of Grade(Portland Pozzolona Cement)<br></br></li>
+                                                        <li class="list-item bottom-line">M sand for Blockwork &amp;
+                                                            Plastering</li>
+                                                        <li class="list-item bottom-line">RCC Design Mix - As per the
+                                                            structural designer's recommendation</li>
+                                                        <li class="list-item bottom-line">Dr.Fixit Waterproofing</li>
+                                                        <li class="list-item bottom-line">Ceiling Height - 10 feet
+                                                            (Finished Floor level to Finished Floor level) </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="package-container-2">
+                                                    <ul class="list budgetD hidden">
+                                                        <li class="list-item bottom-line">Steel - Sunvik, Meenakshi,
+                                                            Kamdhenu or equivalent</li>
+                                                        <li class="list-item bottom-line">Aggregates - 20mm &amp; 40mm
+                                                        </li>
+                                                        <li class="list-item bottom-line">Blocks - Standard Solid
+                                                            Concrete blocks. 6 inch 4 inch</li>
+                                                        <li class="list-item bottom-line">Cement - Dalmia, Coromandel or
+                                                            Zuari or equivalent (Portland Pozzolona Cement) </li>
+                                                        <li class="list-item bottom-line">M sand for Blockwork &amp;
+                                                            Plastering</li>
+                                                        <li class="list-item bottom-line">RCC Design Mix - As per the
+                                                            structural designer's recommendation</li>
+                                                        <li class="list-item bottom-line">Dr.Fixit Waterproofing</li>
+                                                        <li class="list-item bottom-line">Ceiling Height - 10 feet
+                                                            (Finished Floor level to Finished Floor level)
+                                                    </ul>
+                                                    <ul class="list basicD">
+                                                        <li class="list-item bottom-line">Steel - Sunvik, Meenakshi,
+                                                            Kamdhenu or equivalent</li>
+                                                        <li class="list-item bottom-line">Aggregates - 20mm &amp; 40mm
+                                                        </li>
+                                                        <li class="list-item bottom-line">Blocks - Standard Solid
+                                                            Concrete blocks. 6 inch 4 inch</li>
+                                                        <li class="list-item bottom-line">Cement- ACC, Birla or
+                                                            equivalent (Portland Pozzolona Cement) <br></br>
+                                                        </li>
+                                                        <li class="list-item bottom-line">M sand for Blockwork &amp;
+                                                            Plastering</li>
+                                                        <li class="list-item bottom-line">RCC Design Mix - As per the
+                                                            structural designer's recommendation</li>
+                                                        <li class="list-item bottom-line">Dr.Fixit Waterproofing</li>
+                                                        <li class="list-item bottom-line">Ceiling Height - 10 feet
+                                                            (Finished Floor level to Finished Floor level)
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Steel - JSW steel or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Aggregates - 20mm &amp; 40mm
+                                                        </li>
+                                                        <li class="list-item bottom-line">Blocks - Standard Solid
+                                                            Concrete blocks. 6 inch 4 inch</li>
+                                                        <li class="list-item bottom-line">Cement - ACC, Birla or
+                                                            equivalent of Grade (Portland Pozzolona cement)<br></br>
+                                                        </li>
+                                                        <li class="list-item bottom-line">M sand for Blockwork &amp;
+                                                            Plastering</li>
+                                                        <li class="list-item bottom-line">RCC Design Mix - As per the
+                                                            structural designer's recommendation</li>
+                                                        <li class="list-item bottom-line">Dr.Fixit Waterproofing</li>
+                                                        <li class="list-item bottom-line">Ceiling Height - 10 feet
+                                                            (Finished Floor level to Finished Floor level)
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Steel - JSW steel or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Aggregates - 20mm &amp; 40mm
+                                                        </li>
+                                                        <li class="list-item bottom-line">Blocks - Standard Solid
+                                                            Concrete blocks. 6 inch 4 inch</li>
+                                                        <li class="list-item bottom-line">Cement - ACC, Birla or
+                                                            equivalent (Portland Pozzolona Cement)<br></br> </li>
+                                                        <li class="list-item bottom-line">M sand for Blockwork &amp;
+                                                            Plastering</li>
+                                                        <li class="list-item bottom-line">RCC Design Mix - As per the
+                                                            structural designer's recommendation</li>
+                                                        <li class="list-item bottom-line">Dr.Fixit Waterproofing</li>
+                                                        <li class="list-item bottom-line">Ceiling Height - 10 feet
+                                                            (Finished Floor level to Finished Floor level)
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Steel - JSW steel or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Aggregates - 20mm &amp; 40mm
+                                                        </li>
+                                                        <li class="list-item bottom-line">Blocks - Standard Solid
+                                                            Concrete blocks. 6 inch 4 inch</li>
+                                                        <li class="list-item bottom-line">Cement - ACC, Birla or
+                                                            equivalent of Grade (Portland Pozzolonza Cement)<br></br>
+                                                        </li>
+                                                        <li class="list-item bottom-line">M sand for Blockwork &amp;
+                                                            Plastering</li>
+                                                        <li class="list-item bottom-line">RCC Design Mix - As per the
+                                                            structural designer's recommendation</li>
+                                                        <li class="list-item bottom-line">Dr.Fixit Waterproofing</li>
+                                                        <li class="list-item bottom-line">Ceiling Height - 10 feet
+                                                            (Finished Floor level to Finished Floor level)
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Steel - JSW steel or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Aggregates - 20mm &amp; 40mm
+                                                        </li>
+                                                        <li class="list-item bottom-line">Blocks - Standard Solid
+                                                            Concrete blocks. 6 inch 4 inch</li>
+                                                        <li class="list-item bottom-line">Cement - ACC, Birla or
+                                                            equivalent of Grade(Portland Pozzolona Cement)<br></br></li>
+                                                        <li class="list-item bottom-line">M sand for Blockwork &amp;
+                                                            Plastering</li>
+                                                        <li class="list-item bottom-line">RCC Design Mix - As per the
+                                                            structural designer's recommendation</li>
+                                                        <li class="list-item bottom-line">Dr.Fixit Waterproofing</li>
+                                                        <li class="list-item bottom-line">Ceiling Height - 10 feet
+                                                            (Finished Floor level to Finished Floor level) </li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of panel -->
+
+                                    <div class="panel">
+                                        <div class="panel-heading" role="tab" id="headingThree">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    Kitchen
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingThree">
+                                            <div class="panel-body row">
+                                                <div class="package-container-1">
+                                                    <ul class="list budgetD">
+                                                        <li class="list-item bottom-line">Ceramic Wall Tiles, 2 feet
+                                                            above kitchen slab - Upto Rs.40 per Sqft</li>
+                                                        <li class="list-item bottom-line">Main Sink Faucet - Upto
+                                                            Rs.1300</li>
+                                                        <li class="list-item bottom-line">Any Other Faucet &amp;
+                                                            Accessories - ISI Marked</li>
+                                                        <li class="list-item bottom-line">Kitchen Sink - Stainless Steel
+                                                            Single Sink worth Rs.3000<br></br></li>
+                                                        <li class="list-item bottom-line">Kitchen Granite Countertop -
+                                                            Upto Rs.120 per Sqft</li>
+                                                    </ul>
+                                                    <ul class="list basicD hidden">
+                                                        <li class="list-item bottom-line">Ceramic Wall Tiles, 2 feet
+                                                            above kitchen slab - Upto Rs.50 per Sqft</li>
+                                                        <li class="list-item bottom-line">Main Sink Faucet - Upto
+                                                            Rs.1500</li>
+                                                        <li class="list-item bottom-line">Any Other Faucet &amp;
+                                                            Accessories - ISI Marked</li>
+                                                        <li class="list-item bottom-line">Kitchen Sink - Stainless Steel
+                                                            Single Sink worth Rs.5000<br></br></li>
+                                                        <li class="list-item bottom-line">Kitchen Granite Countertop -
+                                                            Upto Rs.140 per Sqft</li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Ceramic Wall Tiles, 2 feet
+                                                            above kitchen slab - Upto Rs.60 per Sqft</li>
+                                                        <li class="list-item bottom-line">Main Sink Faucet - Upto
+                                                            Rs.2000</li>
+                                                        <li class="list-item bottom-line">Any Other Faucet &amp;
+                                                            Accessories - Jaquar/Parryware/
+                                                            Hindware</li>
+                                                        <li class="list-item bottom-line">Kitchen Sink - Stainless Steel
+                                                            Single Sink worth Rs.6000<br></br></li>
+                                                        <li class="list-item bottom-line">Kitchen Granite upto 38 mm
+                                                            thick - Upto Rs.160 per Sqft
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Ceramic Wall Tiles, 2 feet
+                                                            above kitchen slab - Upto Rs.70 per Sqft</li>
+                                                        <li class="list-item bottom-line">Main Sink Faucet - Upto
+                                                            Rs.3000</li>
+                                                        <li class="list-item bottom-line">Any Other Faucet &amp;
+                                                            Accessories - - Jaquar/Parryware/Hindware</li>
+                                                        <li class="list-item bottom-line">Kitchen Sink - Stainless Steel
+                                                            Single Sink or Granite
+                                                            finish worth Rs.7000/- (Futura , Carysil)</li>
+                                                        <li class="list-item bottom-line">Kitchen Granite Countertop-
+                                                            Upto Rs.180 per Sqft
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Ceramic Wall Tiles, 2 feet
+                                                            above kitchen slab - Upto
+                                                            Rs.80 per Sqft</li>
+                                                        <li class="list-item bottom-line">Main Sink Faucet - Upto
+                                                            Rs.3500</li>
+                                                        <li class="list-item bottom-line">Any Other Faucet &amp;
+                                                            Accessories - - Jaquar/Parryware/Hindware</li>
+                                                        <li class="list-item bottom-line">Kitchen Sink - Stainless Steel
+                                                            Single Sink or Granite
+                                                            finish worth Rs.8000/- (Futura , Carysil)</li>
+                                                        <li class="list-item bottom-line">Kitchen Granite upto 38 mm
+                                                            thick - Upto Rs.200 per Sqft</li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Ceramic Wall Tiles, 2 feet
+                                                            above kitchen slab - Upto
+                                                            Rs.90 per Sqft</li>
+                                                        <li class="list-item bottom-line">Main Sink Faucet - Upto
+                                                            Rs.3500</li>
+                                                        <li class="list-item bottom-line">Any Other Faucet &amp;
+                                                            Accessories - - Jaquar/Parryware/Hindware</li>
+                                                        <li class="list-item bottom-line">Kitchen Sink - Stainless Steel
+                                                            Single Sink or Granite
+                                                            finish worth Rs.8000/- (Futura , Carysil)</li>
+                                                        <li class="list-item bottom-line">Kitchen Granite upto 38 mm
+                                                            thick - Upto Rs.200 per Sqft</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="package-container-2">
+                                                    <ul class="list budgetD hidden">
+                                                        <li class="list-item bottom-line">Ceramic Wall Tiles, 2 feet
+                                                            above kitchen slab - Upto Rs.40 per Sqft</li>
+                                                        <li class="list-item bottom-line">Main Sink Faucet - Upto
+                                                            Rs.1300</li>
+                                                        <li class="list-item bottom-line">Any Other Faucet &amp;
+                                                            Accessories - ISI Marked</li>
+                                                        <li class="list-item bottom-line">Kitchen Sink - Stainless Steel
+                                                            Single Sink worth Rs.3000<br></br></li>
+                                                        <li class="list-item bottom-line">Kitchen Granite Countertop -
+                                                            Upto Rs.120 per Sqft</li>
+                                                    </ul>
+                                                    <ul class="list basicD ">
+                                                        <li class="list-item bottom-line">Ceramic Wall Tiles, 2 feet
+                                                            above kitchen slab - Upto Rs.50 per Sqft</li>
+                                                        <li class="list-item bottom-line">Main Sink Faucet - Upto
+                                                            Rs.1500</li>
+                                                        <li class="list-item bottom-line">Any Other Faucet &amp;
+                                                            Accessories - ISI Marked</li>
+                                                        <li class="list-item bottom-line">Kitchen Sink - Stainless Steel
+                                                            Single Sink worth Rs.5000<br></br></li>
+                                                        <li class="list-item bottom-line">Kitchen Granite Countertop -
+                                                            Upto Rs.140 per Sqft</li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Ceramic Wall Tiles, 2 feet
+                                                            above kitchen slab - Upto Rs.60 per Sqft</li>
+                                                        <li class="list-item bottom-line">Main Sink Faucet - Upto
+                                                            Rs.2000</li>
+                                                        <li class="list-item bottom-line">Any Other Faucet &amp;
+                                                            Accessories - Jaquar/Parryware/
+                                                            Hindware</li>
+                                                        <li class="list-item bottom-line">Kitchen Sink - Stainless Steel
+                                                            Single Sink worth Rs.6000<br></br></li>
+                                                        <li class="list-item bottom-line">Kitchen Granite upto 38 mm
+                                                            thick - Upto Rs.160 per Sqft
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Ceramic Wall Tiles, 2 feet
+                                                            above kitchen slab - Upto Rs.70 per Sqft</li>
+                                                        <li class="list-item bottom-line">Main Sink Faucet - Upto
+                                                            Rs.3000</li>
+                                                        <li class="list-item bottom-line">Any Other Faucet &amp;
+                                                            Accessories - - Jaquar/Parryware/Hindware</li>
+                                                        <li class="list-item bottom-line">Kitchen Sink - Stainless Steel
+                                                            Single Sink or Granite
+                                                            finish worth Rs.7000/- (Futura , Carysil)</li>
+                                                        <li class="list-item bottom-line">Kitchen Granite Countertop-
+                                                            Upto Rs.180 per Sqft
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Ceramic Wall Tiles, 2 feet
+                                                            above kitchen slab - Upto
+                                                            Rs.80 per Sqft</li>
+                                                        <li class="list-item bottom-line">Main Sink Faucet - Upto
+                                                            Rs.3500</li>
+                                                        <li class="list-item bottom-line">Any Other Faucet &amp;
+                                                            Accessories - - Jaquar/Parryware/Hindware</li>
+                                                        <li class="list-item bottom-line">Kitchen Sink - Stainless Steel
+                                                            Single Sink or Granite
+                                                            finish worth Rs.8000/- (Futura , Carysil)</li>
+                                                        <li class="list-item bottom-line">Kitchen Granite upto 38 mm
+                                                            thick - Upto Rs.200 per Sqft</li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Ceramic Wall Tiles, 2 feet
+                                                            above kitchen slab - Upto
+                                                            Rs.90 per Sqft</li>
+                                                        <li class="list-item bottom-line">Main Sink Faucet - Upto
+                                                            Rs.3500</li>
+                                                        <li class="list-item bottom-line">Any Other Faucet &amp;
+                                                            Accessories - - Jaquar/Parryware/Hindware</li>
+                                                        <li class="list-item bottom-line">Kitchen Sink - Stainless Steel
+                                                            Single Sink or Granite
+                                                            finish worth Rs.8000/- (Futura , Carysil)</li>
+                                                        <li class="list-item bottom-line">Kitchen Granite upto 38 mm
+                                                            thick - Upto Rs.200 per Sqft</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of panel -->
+
+                                    <div class="panel">
+                                        <div class="panel-heading" role="tab" id="headingFour">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+                                                    aria-controls="collapseFour">
+                                                    Bathroom
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingFour">
+                                            <div class="panel-body row">
+                                                <div class="package-container-1">
+                                                    <ul class="list budgetD">
+                                                        <li class="list-item bottom-line">Bathroom Ceramic Wall Tiles
+                                                            with 7 feet height - Upto Rs.40 per Sqft</li>
+                                                        <li class="list-item bottom-line">Sanitary ware &amp; CP
+                                                            Fittings - Upto Rs.50000 per 1000 sqft of
+                                                            construction. </li>
+                                                        <li class="list-item bottom-line">CPVC Pipe - Astral or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Bathroom Accessories - EWC,
+                                                            Health Faucet, Wash Basin with accessories, 2
+                                                            in 1 wall mixer, Overhead Shower.</li>
+                                                        <li class="list-item bottom-line">Bathroom doors - Waterproof
+                                                            flush doors</li>
+                                                    </ul>
+                                                    <ul class="list basicD hidden">
+                                                        <li class="list-item bottom-line">Bathroom Ceramic Wall Tiles
+                                                            with 7 feet height - Upto Rs 50 per Sqft</li>
+                                                        <li class="list-item bottom-line">Sanitary ware &amp; CP
+                                                            Fittings - Upto Rs.40000 per 1000 sqft of
+                                                            construction. </li>
+                                                        <li class="list-item bottom-line">CPVC Pipe - Astral or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Bathroom Accessories - EWC,
+                                                            Health Faucet, Wash Basin with accessories, 2
+                                                            in 1 wall mixer, Overhead Shower.</li>
+                                                        <li class="list-item bottom-line">Bathroom doors - Waterproof
+                                                            flush doors</li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Bathroom Ceramic Wall Tiles
+                                                            with 7 feet height - Upto Rs.60 per Sqft</li>
+                                                        <li class="list-item bottom-line">Sanitary ware &amp; CP
+                                                            Fittings - Upto Rs.50000 per 1000 sqft of
+                                                            construction. </li>
+                                                        <li class="list-item bottom-line">CPVC Pipe - Astral or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Bathroom Accessories - EWC,
+                                                            Health Faucet, Wash Basin with accessories, 2
+                                                            in 1 wall mixer, Overhead Shower.</li>
+                                                        <li class="list-item bottom-line">Bathroom doors - Waterproof
+                                                            flush doors</li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Bathroom Ceramic Wall Tiles
+                                                            with 7 feet height - Upto Rs.70 per Sqft</li>
+                                                        <li class="list-item bottom-line">Sanitary ware &amp; CP
+                                                            Fittings - Upto Rs.60000 per 1000
+                                                            sqft of construction </li>
+                                                        <li class="list-item bottom-line">CPVC Pipe - Ashirwad / Supreme
+                                                            or equivalent</li>
+                                                        <li class="list-item bottom-line">Bathroom Accessories - EWC,
+                                                            Health Faucet, Wash Basin with accessories, 2
+                                                            in 1 wall mixer, Overhead Shower.</li>
+                                                        <li class="list-item bottom-line">Mirror, Soap Dish, Towel Rail
+                                                            - Worth ₹5000 till 1000 ft</li>
+                                                        <li class="list-item bottom-line">Bathroom doors - Waterproof
+                                                            flush doors</li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Bathroom Ceramic Wall Tiles
+                                                            with 7 feet height - Upto Rs.80 per Sqft</li>
+                                                        <li class="list-item bottom-line">Sanitary ware &amp; CP
+                                                            Fittings - Upto Rs.70000 per 1000 sqft of
+                                                            construction. </li>
+                                                        <li class="list-item bottom-line">CPVC Pipe - Ashirwad / Supreme
+                                                            or equivalent</li>
+                                                        <li class="list-item bottom-line">Bathroom Accessories - EWC,
+                                                            Health Faucet, Wash Basin with accessories, 2
+                                                            in 1 wall mixer, Overhead Shower.</li>
+                                                        <li class="list-item bottom-line">Bathroom doors - Waterproof
+                                                            flush doors</li>
+                                                        <li class="list-item bottom-line">Mirror, Soap Dish, Towel Rail
+                                                            - Worth ₹7000 till 1000 ft </li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Bathroom Ceramic Wall Tiles
+                                                            with 7 feet height - Upto Rs.90 per Sqft</li>
+                                                        <li class="list-item bottom-line">Sanitary ware &amp; CP
+                                                            Fittings - Upto Rs.80000 per 1000 sqft of
+                                                            construction. </li>
+                                                        <li class="list-item bottom-line">CPVC Pipe - - Ashirwad /
+                                                            Supreme or equivalent</li>
+                                                        <li class="list-item bottom-line">Bathroom Accessories - EWC,
+                                                            Health Faucet, Wash Basin with accessories, 2
+                                                            in 1 wall mixer, Overhead Shower.</li>
+                                                        <li class="list-item bottom-line">Bathroom doors - Waterproof
+                                                            flush doors</li>
+                                                        <li class="list-item bottom-line"> Mirror, Soap Dish, Towel Rail
+                                                            - Worth ₹9000 till 1000 ft</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="package-container-2">
+                                                    <ul class="list budgetD hidden">
+                                                        <li class="list-item bottom-line">Bathroom Ceramic Wall Tiles
+                                                            with 7 feet height - Upto Rs.40 per Sqft</li>
+                                                        <li class="list-item bottom-line">Sanitary ware &amp; CP
+                                                            Fittings - Upto Rs.50000 per 1000 sqft of
+                                                            construction. </li>
+                                                        <li class="list-item bottom-line">CPVC Pipe - Astral or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Bathroom Accessories - EWC,
+                                                            Health Faucet, Wash Basin with accessories, 2
+                                                            in 1 wall mixer, Overhead Shower.</li>
+                                                        <li class="list-item bottom-line">Bathroom doors - Waterproof
+                                                            flush doors</li>
+                                                    </ul>
+                                                    <ul class="list basicD ">
+                                                        <li class="list-item bottom-line">Bathroom Ceramic Wall Tiles
+                                                            with 7 feet height - Upto Rs 50 per Sqft</li>
+                                                        <li class="list-item bottom-line">Sanitary ware &amp; CP
+                                                            Fittings - Upto Rs.40000 per 1000 sqft of
+                                                            construction. </li>
+                                                        <li class="list-item bottom-line">CPVC Pipe - Astral or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Bathroom Accessories - EWC,
+                                                            Health Faucet, Wash Basin with accessories, 2
+                                                            in 1 wall mixer, Overhead Shower.</li>
+                                                        <li class="list-item bottom-line">Bathroom doors - Waterproof
+                                                            flush doors</li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Bathroom Ceramic Wall Tiles
+                                                            with 7 feet height - Upto Rs.60 per Sqft</li>
+                                                        <li class="list-item bottom-line">Sanitary ware &amp; CP
+                                                            Fittings - Upto Rs.50000 per 1000 sqft of
+                                                            construction. </li>
+                                                        <li class="list-item bottom-line">CPVC Pipe - Astral or
+                                                            equivalent<br></br></li>
+                                                        <li class="list-item bottom-line">Bathroom Accessories - EWC,
+                                                            Health Faucet, Wash Basin with accessories, 2
+                                                            in 1 wall mixer, Overhead Shower.</li>
+                                                        <li class="list-item bottom-line">Bathroom doors - Waterproof
+                                                            flush doors</li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Bathroom Ceramic Wall Tiles
+                                                            with 7 feet height - Upto Rs.80 per Sqft</li>
+                                                        <li class="list-item bottom-line">Sanitary ware &amp; CP
+                                                            Fittings - Upto Rs.70000 per 1000 sqft of
+                                                            construction. </li>
+                                                        <li class="list-item bottom-line">CPVC Pipe - Ashirwad / Supreme
+                                                            or equivalent</li>
+                                                        <li class="list-item bottom-line">Bathroom Accessories - EWC,
+                                                            Health Faucet, Wash Basin with accessories, 2
+                                                            in 1 wall mixer, Overhead Shower.</li>
+                                                        <li class="list-item bottom-line">Bathroom doors - Waterproof
+                                                            flush doors</li>
+                                                        <li class="list-item bottom-line">Mirror, Soap Dish, Towel Rail
+                                                            - Worth ₹7000 till 1000 ft </li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Bathroom Ceramic Wall Tiles
+                                                            with 7 feet height - Upto Rs.80 per Sqft</li>
+                                                        <li class="list-item bottom-line">Sanitary ware &amp; CP
+                                                            Fittings - Upto Rs.70000 per 1000 sqft of
+                                                            construction. </li>
+                                                        <li class="list-item bottom-line">CPVC Pipe - Ashirwad / Supreme
+                                                            or equivalent</li>
+                                                        <li class="list-item bottom-line">Bathroom Accessories - EWC,
+                                                            Health Faucet, Wash Basin with accessories, 2
+                                                            in 1 wall mixer, Overhead Shower.</li>
+                                                        <li class="list-item bottom-line">Bathroom doors - Waterproof
+                                                            flush doors</li>
+                                                        <li class="list-item bottom-line">Mirror, Soap Dish, Towel Rail
+                                                            - Worth ₹7000 till 1000 ft </li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Bathroom Ceramic Wall Tiles
+                                                            with 7 feet height - Upto Rs.90 per Sqft</li>
+                                                        <li class="list-item bottom-line">Sanitary ware &amp; CP
+                                                            Fittings - Upto Rs.80000 per 1000 sqft of
+                                                            construction. </li>
+                                                        <li class="list-item bottom-line">CPVC Pipe - - Ashirwad /
+                                                            Supreme or equivalent</li>
+                                                        <li class="list-item bottom-line">Bathroom Accessories - EWC,
+                                                            Health Faucet, Wash Basin with accessories, 2
+                                                            in 1 wall mixer, Overhead Shower.</li>
+                                                        <li class="list-item bottom-line">Bathroom doors - Waterproof
+                                                            flush doors</li>
+                                                        <li class="list-item bottom-line"> Mirror, Soap Dish, Towel Rail
+                                                            - Worth ₹9000 till 1000 ft</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of panel -->
+
+                                    <div class="panel">
+                                        <div class="panel-heading" role="tab" id="headingFive">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+                                                    aria-controls="collapseFive">
+                                                    Doors & Windows
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingFive">
+                                            <div class="panel-body row">
+                                                <div class="package-container-1">
+                                                    <ul class="list budgetD">
+                                                        <li class="list-item bottom-line">Main Door - Flush Door With
+                                                            Veneer. Sal wood frame of 5 inch by 3 inch,
+                                                            worth Rs.13000 including fixtures</li>
+                                                        <li class="list-item bottom-line">Internal Doors - Membrane
+                                                            doors / Flush Door with Laminates upto Rs.8000
+                                                            including fixtures. Door Frames of Sal Wood 4 inch by 2.5
+                                                            inch</li>
+                                                        <li class="list-item bottom-line">Windows - Aluminium Windows
+                                                            with glass shutters and mesh shutters(3 track
+                                                            with 1 mesh)</li>
+                                                    </ul>
+                                                    <ul class="list basicD hidden">
+                                                        <li class="list-item bottom-line">Main Door - Indian Or African
+                                                            teak door with teak frame
+                                                            of 5 inch by 3 inch, worth Rs.20000 including fixtures</li>
+                                                        <li class="list-item bottom-line">Internal Doors - Membrane
+                                                            doors / Flush Door with
+                                                            Laminates upto Rs.8000 including fixtures. Door
+                                                            Frames of Sal Wood 4 inch by 2.5 inch`
+                                                        </li>
+                                                        <li class="list-item bottom-line">Windows - Aluminium Windows
+                                                            with glass shutters and mesh shutters(3 track
+                                                            with 1 mesh)</li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Main Door - Burma Teak Door
+                                                            with teak frame of 5inch
+                                                            by 3 inch, worth Rs.30000 including fixtures</li>
+                                                        <li class="list-item bottom-line">Internal Doors - Membrane
+                                                            doors / Flush Door with Laminates upto Rs.8000
+                                                            including fixtures. Door Frames of Sal Wood 4 inch by 2.5
+                                                            inch</li>
+                                                        <li class="list-item bottom-line">Windows - Aluminium Windows
+                                                            with glass shutters and mesh shutters(3 track
+                                                            with 1 mesh)</li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Main Door - Burma Teak Door
+                                                            with teak frame of 5inch
+                                                            by 3.5 inch, worth Rs.35000 including fixtures</li>
+                                                        <li class="list-item bottom-line">Internal Doors - Hardwood
+                                                            Panelled Door upto Rs.11000
+                                                            including fixtures. Door Frames of Sal Wood 4x3
+                                                            inch<br></br>
+                                                        </li>
+                                                        <li class="list-item bottom-line">Windows - White Sal wood/UPVC
+                                                            Windows with glass and mesh shutters(3 track with 1 mesh)
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Main Door - Burma Teak Door
+                                                            with teak frame of 5inch
+                                                            by 3.5 inch, worth Rs.40000 including fixtures</li>
+                                                        <li class="list-item bottom-line">Internal Doors - Hardwood
+                                                            Panelled Door upto Rs.11000
+                                                            including fixtures. Door Frames of Sal Wood 4x3
+                                                            inch<br></br> </li>
+                                                        <li class="list-item bottom-line">Windows - White Sal wood/UPVC
+                                                            Windows with glass
+                                                            and mesh shutters(3 track with 1 mesh)</li>
+                                                        <li class="list-item bottom-line">Pooja Room Door - Burma Teak
+                                                            along with teak frame of
+                                                            5inch by 2.5 inch, worth ₹30000</li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Main Door - Burma Teak Door
+                                                            with teak frame of 5inch
+                                                            by 3.5 inch, worth Rs.50000 including fixtures</li>
+                                                        <li class="list-item bottom-line">Internal Doors - Hardwood
+                                                            Panelled Door upto Rs.11000
+                                                            including fixtures. Door Frames of Sal Wood 4x3 inch
+                                                            <br></br>
+                                                        </li>
+                                                        <li class="list-item bottom-line">Windows - White Sal wood/UPVC
+                                                            Windows with glass
+                                                            and mesh shutters(3 track with 1 mesh)</li>
+                                                        <li class="list-item bottom-line">Pooja Room Door - Burma Teak
+                                                            along with teak frame of
+                                                            5inch by 2.5 inch, worth ₹25000</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="package-container-2">
+                                                    <ul class="list budgetD hidden">
+                                                        <li class="list-item bottom-line">Main Door - Flush Door With
+                                                            Veneer. Sal wood frame of 5 inch by 3 inch,
+                                                            worth Rs.13000 including fixtures</li>
+                                                        <li class="list-item bottom-line">Internal Doors - Membrane
+                                                            doors / Flush Door with Laminates upto Rs.8000
+                                                            including fixtures. Door Frames of Sal Wood 4 inch by 2.5
+                                                            inch</li>
+                                                        <li class="list-item bottom-line">Windows - Aluminium Windows
+                                                            with glass shutters and mesh shutters(3 track
+                                                            with 1 mesh)</li>
+                                                    </ul>
+                                                    <ul class="list basicD ">
+                                                        <li class="list-item bottom-line">Main Door - Indian Or African
+                                                            teak door with teak frame
+                                                            of 5 inch by 3 inch, worth Rs.20000 including fixtures</li>
+                                                        <li class="list-item bottom-line">Internal Doors - Membrane
+                                                            doors / Flush Door with
+                                                            Laminates upto Rs.8000 including fixtures. Door
+                                                            Frames of Sal Wood 4 inch by 2.5 inch`
+                                                        </li>
+                                                        <li class="list-item bottom-line">Windows - Aluminium Windows
+                                                            with glass shutters and mesh shutters(3 track
+                                                            with 1 mesh)</li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Main Door - Burma Teak Door
+                                                            with teak frame of 5inch
+                                                            by 3 inch, worth Rs.30000 including fixtures</li>
+                                                        <li class="list-item bottom-line">Internal Doors - Membrane
+                                                            doors / Flush Door with Laminates upto Rs.8000
+                                                            including fixtures. Door Frames of Sal Wood 4 inch by 2.5
+                                                            inch</li>
+                                                        <li class="list-item bottom-line">Windows - Aluminium Windows
+                                                            with glass shutters and mesh shutters(3 track
+                                                            with 1 mesh)</li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Main Door - Burma Teak Door
+                                                            with teak frame of 5inch
+                                                            by 3.5 inch, worth Rs.35000 including fixtures</li>
+                                                        <li class="list-item bottom-line">Internal Doors - Hardwood
+                                                            Panelled Door upto Rs.11000
+                                                            including fixtures. Door Frames of Sal Wood 4x3
+                                                            inch<br></br>
+                                                        </li>
+                                                        <li class="list-item bottom-line">Windows - White Sal wood/UPVC
+                                                            Windows with glass and mesh shutters(3 track with 1 mesh)
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Main Door - Burma Teak Door
+                                                            with teak frame of 5inch
+                                                            by 3.5 inch, worth Rs.40000 including fixtures</li>
+                                                        <li class="list-item bottom-line">Internal Doors - Hardwood
+                                                            Panelled Door upto Rs.11000
+                                                            including fixtures. Door Frames of Sal Wood 4x3 inch
+                                                            <br></br>
+                                                        </li>
+                                                        <li class="list-item bottom-line">Windows - White Sal wood/UPVC
+                                                            Windows with glass
+                                                            and mesh shutters(3 track with 1 mesh)</li>
+                                                        <li class="list-item bottom-line">Pooja Room Door - Burma Teak
+                                                            along with teak frame of
+                                                            5inch by 2.5 inch, worth ₹30000</li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Main Door - Burma Teak Door
+                                                            with teak frame of 5inch
+                                                            by 3.5 inch, worth Rs.50000 including fixtures</li>
+                                                        <li class="list-item bottom-line">Internal Doors - Hardwood
+                                                            Panelled Door upto Rs.11000
+                                                            including fixtures. Door Frames of Sal Wood 4x3 inch
+                                                            <br></br>
+                                                        </li>
+                                                        <li class="list-item bottom-line">Windows - White Sal wood/UPVC
+                                                            Windows with glass
+                                                            and mesh shutters(3 track with 1 mesh)</li>
+                                                        <li class="list-item bottom-line">Pooja Room Door - Burma Teak
+                                                            along with teak frame of
+                                                            5inch by 2.5 inch, worth ₹25000</li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of panel -->
+
+                                    <div class="panel">
+                                        <div class="panel-heading" role="tab" id="headingSix">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseSix" aria-expanded="false"
+                                                    aria-controls="collapseSix">
+                                                    Painting
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingSix">
+                                            <div class="panel-body row">
+                                                <div class="package-container-1">
+                                                    <ul class="list budgetD">
+                                                        <li class="list-item bottom-line">Interior Painting - JK Putty +
+                                                            Tractor Emulsion or equivalent</li>
+                                                        <li class="list-item bottom-line">Exterior Painting - Asian
+                                                            Primer + Ace Exterior Emulsion Paint or
+                                                            equivalent<br></br></li>
+                                                    </ul>
+                                                    <ul class="list basicD hidden">
+                                                        <li class="list-item bottom-line">Interior Painting - JK Putty +
+                                                            Tractor Emulsion or equivalent</li>
+                                                        <li class="list-item bottom-line">Exterior Painting - Asian
+                                                            Primer + Ace Exterior Emulsion Paint or
+                                                            equivalent<br></br></li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Interior Painting - JK Putty +
+                                                            Tractor Emulsion Shyne or equivalent</li>
+                                                        <li class="list-item bottom-line">Exterior Painting - Asian
+                                                            Primer + Apex Exterior Emulsion Paint or equivalent<br></br>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Interior Painting - JK Putty +
+                                                            Apcolite Premium
+                                                            Emulsion or equivalent</li>
+                                                        <li class="list-item bottom-line">Exterior Painting - Asian
+                                                            Primer + Apex Exterior Emulsion Paint or equivalent<br></br>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Interior Painting - JK Putty +
+                                                            Apcolite Premium
+                                                            Emulsion or equivalent</li>
+                                                        <li class="list-item bottom-line">Exterior Painting - Asian
+                                                            Primer + Apex Exterior
+                                                            Emulsion Paint or equivalent<br></br></li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Interior Painting - JK Putty +
+                                                            Royale Luxury Emulsion or equivalent
+                                                        </li>
+                                                        <li class="list-item bottom-line">Exterior Painting - Asian
+                                                            Primer + Apex Ultima Exterior
+                                                            Emulsion Paint or equivalent</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="package-container-2">
+                                                    <ul class="list budgetD hidden">
+                                                        <li class="list-item bottom-line">Interior Painting - JK Putty +
+                                                            Tractor Emulsion or equivalent</li>
+                                                        <li class="list-item bottom-line">Exterior Painting - Asian
+                                                            Primer + Ace Exterior Emulsion Paint or
+                                                            equivalent<br></br></li>
+                                                    </ul>
+                                                    <ul class="list basicD ">
+                                                        <li class="list-item bottom-line">Interior Painting - JK Putty +
+                                                            Tractor Emulsion or equivalent</li>
+                                                        <li class="list-item bottom-line">Exterior Painting - Asian
+                                                            Primer + Ace Exterior Emulsion Paint or
+                                                            equivalent<br></br></li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Interior Painting - JK Putty +
+                                                            Tractor Emulsion Shyne or equivalent</li>
+                                                        <li class="list-item bottom-line">Exterior Painting - Asian
+                                                            Primer + Apex Exterior Emulsion Paint or equivalent<br></br>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Interior Painting - JK Putty +
+                                                            Apcolite Premium
+                                                            Emulsion or equivalent</li>
+                                                        <li class="list-item bottom-line">Exterior Painting - Asian
+                                                            Primer + Apex Exterior Emulsion Paint or equivalent<br></br>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Interior Painting - JK Putty +
+                                                            Apcolite Premium
+                                                            Emulsion or equivalent</li>
+                                                        <li class="list-item bottom-line">Exterior Painting - Asian
+                                                            Primer + Apex Exterior
+                                                            Emulsion Paint or equivalent<br></br></li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Interior Painting - JK Putty +
+                                                            Royale Luxury Emulsion or equivalent
+                                                        </li>
+                                                        <li class="list-item bottom-line">Exterior Painting - Asian
+                                                            Primer + Apex Ultima Exterior
+                                                            Emulsion Paint or equivalent</li>
+                                                    </ul>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of panel -->
+
+                                    <div class="panel">
+                                        <div class="panel-heading" role="tab" id="headingSeven">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseSeven" aria-expanded="false"
+                                                    aria-controls="collapseSeven">
+                                                    Flooring
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingSeven">
+                                            <div class="panel-body row">
+                                                <div class="package-container-1">
+                                                    <ul class="list budgetD">
+                                                        <li class="list-item bottom-line">Living and Dining Flooring -
+                                                            Tiles of value upto Rs.50 per sqft<br></br></li>
+                                                        <li class="list-item bottom-line">Rooms and Kitchen Flooring -
+                                                            Tiles or Granite or Wooden flooring upto Rs.50 per sqft</li>
+                                                        <li class="list-item bottom-line">Balcony and Open Areas
+                                                            Flooring - Anti-skid tiles of value upto Rs.40 per
+                                                            sqft</li>
+                                                        <li class="list-item bottom-line">Staircase Flooring -
+                                                            Sadarahalli Granite or Marble of value upto ₹ 70 per sqft
+                                                        </li>
+                                                        <li class="list-item bottom-line">Parking Tiles - Anti-skid
+                                                            tiles of value upto ₹40 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list basicD hidden">
+                                                        <li class="list-item bottom-line">Living and Dining Flooring -
+                                                            Tiles of value upto Rs.70 per sqft<br></br></li>
+                                                        <li class="list-item bottom-line">Rooms and Kitchen Flooring -
+                                                            Tiles or Granite or
+                                                            Wooden flooring upto Rs.60 per sqft</li>
+                                                        <li class="list-item bottom-line">Balcony and Open Areas
+                                                            Flooring - Anti-skid tiles of
+                                                            value upto Rs.40 per sqft</li>
+                                                        <li class="list-item bottom-line">Staircase Flooring -
+                                                            Sadarahalli Granite or Marble of
+                                                            value upto ₹ 70 per sqft</li>
+                                                        <li class="list-item bottom-line">Parking Tiles - Anti-skid
+                                                            tiles of value upto ₹50 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Living and Dining Flooring -
+                                                            Tiles or Granite or Marble of
+                                                            value upto Rs.80 per sqft</li>
+                                                        <li class="list-item bottom-line">Rooms and Kitchen Flooring -
+                                                            Tiles or Granite or
+                                                            Wooden flooring upto Rs.80 per sqft</li>
+                                                        <li class="list-item bottom-line">Balcony and Open Areas
+                                                            Flooring - Anti-skid tiles of value upto Rs.60 per
+                                                            sqft</li>
+                                                        <li class="list-item bottom-line">Staircase Flooring -
+                                                            Sadarahalli Granite or marble of value upto ₹ 80 per
+                                                            sqft</li>
+                                                        <li class="list-item bottom-line">Parking Tiles - Anti-skid
+                                                            tiles of value upto ₹50 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Living and Dining Flooring -
+                                                            Tiles or Granite or Marble of
+                                                            value upto Rs.120 per sqft</li>
+                                                        <li class="list-item bottom-line">Rooms and Kitchen Flooring -
+                                                            Tiles or Granite or
+                                                            Wooden flooring upto Rs.100 per sqft</li>
+                                                        <li class="list-item bottom-line">Balcony and Open Areas
+                                                            Flooring - Anti-skid tiles of
+                                                            value upto Rs.70 per sqft</li>
+                                                        <li class="list-item bottom-line">Staircase Flooring -
+                                                            Sadarahalli Granite or Marble of
+                                                            value upto ₹ 90 per sqft</li>
+                                                        <li class="list-item bottom-line">Parking Tiles - Anti-skid
+                                                            tiles of value upto ₹60 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Living and Dining Flooring -
+                                                            Tiles or Granite or Marble of
+                                                            value upto Rs.140 per sqft</li>
+                                                        <li class="list-item bottom-line">Rooms and Kitchen Flooring -
+                                                            Tiles or Granite or
+                                                            Wooden flooring upto Rs.120 per sqft</li>
+                                                        <li class="list-item bottom-line">Balcony and Open Areas
+                                                            Flooring - Anti-skid tiles of
+                                                            value upto Rs.80 per sqft</li>
+                                                        <li class="list-item bottom-line">Staircase Flooring -
+                                                            Sadarahalli Granite or Marble of
+                                                            value upto ₹ 110 per sqft</li>
+                                                        <li class="list-item bottom-line">Parking Tiles - Anti-skid
+                                                            tiles of value upto ₹70 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Living and Dining Flooring -
+                                                            Tiles or Granite or Marble of
+                                                            value upto Rs.160 per sqft</li>
+                                                        <li class="list-item bottom-line">Rooms and Kitchen Flooring -
+                                                            Tiles or Granite or
+                                                            Wooden flooring upto Rs.140 per sqft</li>
+                                                        <li class="list-item bottom-line">Balcony and Open Areas
+                                                            Flooring - Anti-skid tiles of
+                                                            value upto Rs.90 per sqft</li>
+                                                        <li class="list-item bottom-line">Staircase Flooring -
+                                                            Sadarahalli Granite or Marble of
+                                                            value upto ₹ 140 per sqft</li>
+                                                        <li class="list-item bottom-line">Parking Tiles - Anti-skid
+                                                            tiles of value upto ₹70 per sqft</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="package-container-2">
+                                                    <ul class="list budgetD hidden">
+                                                        <li class="list-item bottom-line">Living and Dining Flooring -
+                                                            Tiles of value upto Rs.50 per sqft<br></br></li>
+                                                        <li class="list-item bottom-line">Rooms and Kitchen Flooring -
+                                                            Tiles or Granite or Wooden flooring upto Rs.50 per sqft</li>
+                                                        <li class="list-item bottom-line">Balcony and Open Areas
+                                                            Flooring - Anti-skid tiles of value upto Rs.40 per
+                                                            sqft</li>
+                                                        <li class="list-item bottom-line">Staircase Flooring -
+                                                            Sadarahalli Granite or Marble of value upto ₹ 70 per sqft
+                                                        </li>
+                                                        <li class="list-item bottom-line">Parking Tiles - Anti-skid
+                                                            tiles of value upto ₹40 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list basicD ">
+                                                        <li class="list-item bottom-line">Living and Dining Flooring -
+                                                            Tiles of value upto Rs.70 per sqft<br></br></li>
+                                                        <li class="list-item bottom-line">Rooms and Kitchen Flooring -
+                                                            Tiles or Granite or
+                                                            Wooden flooring upto Rs.60 per sqft</li>
+                                                        <li class="list-item bottom-line">Balcony and Open Areas
+                                                            Flooring - Anti-skid tiles of
+                                                            value upto Rs.40 per sqft</li>
+                                                        <li class="list-item bottom-line">Staircase Flooring -
+                                                            Sadarahalli Granite or Marble of
+                                                            value upto ₹ 70 per sqft</li>
+                                                        <li class="list-item bottom-line">Parking Tiles - Anti-skid
+                                                            tiles of value upto ₹50 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Living and Dining Flooring -
+                                                            Tiles or Granite or Marble of
+                                                            value upto Rs.80 per sqft</li>
+                                                        <li class="list-item bottom-line">Rooms and Kitchen Flooring -
+                                                            Tiles or Granite or
+                                                            Wooden flooring upto Rs.80 per sqft</li>
+                                                        <li class="list-item bottom-line">Balcony and Open Areas
+                                                            Flooring - Anti-skid tiles of value upto Rs.60 per
+                                                            sqft</li>
+                                                        <li class="list-item bottom-line">Staircase Flooring -
+                                                            Sadarahalli Granite or marble of value upto ₹ 80 per
+                                                            sqft</li>
+                                                        <li class="list-item bottom-line">Parking Tiles - Anti-skid
+                                                            tiles of value upto ₹50 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Living and Dining Flooring -
+                                                            Tiles or Granite or Marble of
+                                                            value upto Rs.120 per sqft</li>
+                                                        <li class="list-item bottom-line">Rooms and Kitchen Flooring -
+                                                            Tiles or Granite or
+                                                            Wooden flooring upto Rs.100 per sqft</li>
+                                                        <li class="list-item bottom-line">Balcony and Open Areas
+                                                            Flooring - Anti-skid tiles of
+                                                            value upto Rs.70 per sqft</li>
+                                                        <li class="list-item bottom-line">Staircase Flooring -
+                                                            Sadarahalli Granite or Marble of
+                                                            value upto ₹ 90 per sqft</li>
+                                                        <li class="list-item bottom-line">Parking Tiles - Anti-skid
+                                                            tiles of value upto ₹60 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Living and Dining Flooring -
+                                                            Tiles or Granite or Marble of
+                                                            value upto Rs.140 per sqft</li>
+                                                        <li class="list-item bottom-line">Rooms and Kitchen Flooring -
+                                                            Tiles or Granite or
+                                                            Wooden flooring upto Rs.120 per sqft</li>
+                                                        <li class="list-item bottom-line">Balcony and Open Areas
+                                                            Flooring - Anti-skid tiles of
+                                                            value upto Rs.80 per sqft</li>
+                                                        <li class="list-item bottom-line">Staircase Flooring -
+                                                            Sadarahalli Granite or Marble of
+                                                            value upto ₹ 110 per sqft</li>
+                                                        <li class="list-item bottom-line">Parking Tiles - Anti-skid
+                                                            tiles of value upto ₹70 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Living and Dining Flooring -
+                                                            Tiles or Granite or Marble of
+                                                            value upto Rs.160 per sqft</li>
+                                                        <li class="list-item bottom-line">Rooms and Kitchen Flooring -
+                                                            Tiles or Granite or
+                                                            Wooden flooring upto Rs.140 per sqft</li>
+                                                        <li class="list-item bottom-line">Balcony and Open Areas
+                                                            Flooring - Anti-skid tiles of
+                                                            value upto Rs.90 per sqft</li>
+                                                        <li class="list-item bottom-line">Staircase Flooring -
+                                                            Sadarahalli Granite or Marble of
+                                                            value upto ₹ 140 per sqft</li>
+                                                        <li class="list-item bottom-line">Parking Tiles - Anti-skid
+                                                            tiles of value upto ₹70 per sqft</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of panel -->
+
+                                    <div class="panel">
+                                        <div class="panel-heading" role="tab" id="headingEight">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseEight" aria-expanded="false"
+                                                    aria-controls="collapseEight">
+                                                    Electrical
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseEight" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingEight">
+                                            <div class="panel-body row">
+                                                <div class="package-container-1">
+                                                    <ul class="list budgetD">
+                                                        <li class="list-item bottom-line">Wires - Fireproof wires by
+                                                            Finolex</li>
+                                                        <li class="list-item bottom-line">Switches & Sockets - Anchor
+                                                            Rom<br></br></li>
+                                                    </ul>
+                                                    <ul class="list basicD hidden">
+                                                        <li class="list-item bottom-line">Wires - Fireproof wires by
+                                                            Finolex</li>
+                                                        <li class="list-item bottom-line">Switches & Sockets - Anchor
+                                                            Rom<br></br></li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Wires - Fireproof wires by
+                                                            Finolex</li>
+                                                        <li class="list-item bottom-line">Switches & Sockets - Anchor
+                                                            Rom<br></br></li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Wires - Fireproof wires by
+                                                            Finolex</li>
+                                                        <li class="list-item bottom-line">Switches & Sockets - Anchor
+                                                            Rom<br></br></li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Wires - Fireproof wires by
+                                                            Finolex</li>
+                                                        <li class="list-item bottom-line">Switches & Sockets - GM
+                                                            Modular / Legrand
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Wires - Fireproof wires by
+                                                            Finolex</li>
+                                                        <li class="list-item bottom-line">Switches & Sockets - GM
+                                                            Modular / Legrand
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="package-container-2">
+                                                    <ul class="list budgetD hidden">
+                                                        <li class="list-item bottom-line">Wires - Fireproof wires by
+                                                            Finolex</li>
+                                                        <li class="list-item bottom-line">Switches & Sockets - Anchor
+                                                            Rom<br></br></li>
+                                                    </ul>
+                                                    <ul class="list basicD">
+                                                        <li class="list-item bottom-line">Wires - Fireproof wires by
+                                                            Finolex</li>
+                                                        <li class="list-item bottom-line">Switches & Sockets - Anchor
+                                                            Rom<br></br></li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Wires - Fireproof wires by
+                                                            Finolex</li>
+                                                        <li class="list-item bottom-line">Switches & Sockets - Anchor
+                                                            Rom<br></br></li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Wires - Fireproof wires by
+                                                            Finolex</li>
+                                                        <li class="list-item bottom-line">Switches & Sockets - Anchor
+                                                            Rom<br></br></li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Wires - Fireproof wires by
+                                                            Finolex</li>
+                                                        <li class="list-item bottom-line">Switches & Sockets - GM
+                                                            Modular / Legrand
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Wires - Fireproof wires by
+                                                            Finolex</li>
+                                                        <li class="list-item bottom-line">Switches & Sockets - GM
+                                                            Modular / Legrand
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of panel -->
+
+                                    <div class="panel">
+                                        <div class="panel-heading" role="tab" id="headingNine">
+                                            <h4 class="panel-title">
+                                                <a class="collapsed" role="button" data-toggle="collapse"
+                                                    data-parent="#accordion" href="#collapseNine" aria-expanded="false"
+                                                    aria-controls="collapseNine">
+                                                    Others
+                                                </a>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel"
+                                            aria-labelledby="headingNine">
+                                            <div class="panel-body row">
+                                                <div class="package-container-1">
+                                                    <ul class="list budgetD">
+                                                        <li class="list-item bottom-line">Overhead Tank - Sintex Double
+                                                            Layered 1000
+                                                            ltrs</li>
+                                                        <li class="list-item bottom-line">Underground Sump - 4000 litres
+                                                        </li>
+                                                        <li class="list-item bottom-line">Staircase Railing - MS
+                                                            Railin<br></br></li>
+                                                    </ul>
+                                                    <ul class="list basicD hidden">
+                                                        <li class="list-item bottom-line">Overhead Tank - Sintex Double
+                                                            Layered 1500
+                                                            ltrs</li>
+                                                        <li class="list-item bottom-line">Underground Sump - 6000 litres
+                                                        </li>
+                                                        <li class="list-item bottom-line">Staircase Railing - MS
+                                                            Railin<br></br></li>
+                                                        <li class="list-item bottom-line">Window Grills - Basic MS
+                                                            Grills with
+                                                            Enamel Paint at Rs.110 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Overhead Tank - Sintex Double
+                                                            Layered 1500
+                                                            ltrs</li>
+                                                        <li class="list-item bottom-line">Underground Sump - 6000 litres
+                                                        </li>
+                                                        <li class="list-item bottom-line">Staircase Railing - MS
+                                                            Railin<br></br></li>
+                                                        <li class="list-item bottom-line">Window Grills - Basic MS
+                                                            Grills with
+                                                            Enamel Paint at Rs.110 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Overhead Tank - Sintex Triple
+                                                            Layered 1500
+                                                            ltrs</li>
+                                                        <li class="list-item bottom-line">Underground Sump - 7000 litres
+                                                        </li>
+                                                        <li class="list-item bottom-line">Staircase Railing - MS
+                                                            Railings with sal
+                                                            wood hand rail</li>
+                                                        <li class="list-item bottom-line">Window Grills - Basic MS
+                                                            Grills with
+                                                            Enamel Paint at Rs.110 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Overhead Tank - Sintex Triple
+                                                            Layered 2000
+                                                            ltrs</li>
+                                                        <li class="list-item bottom-line">Underground Sump - 7000 litres
+                                                        </li>
+                                                        <li class="list-item bottom-line">Staircase Railing - MS
+                                                            Railings with teak
+                                                            wood hand rail</li>
+                                                        <li class="list-item bottom-line">Window Grills - Windows MS
+                                                            Grills with
+                                                            Enamel Paint as per client requirement at ₹130 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Overhead Tank - Sintex Triple
+                                                            Layered 2000
+                                                            ltrs</li>
+                                                        <li class="list-item bottom-line">Underground Sump - 8000 litres
+                                                        </li>
+                                                        <li class="list-item bottom-line">Staircase Railing - SS
+                                                            (Stainless Steel)
+                                                            Railing</li>
+                                                        <li class="list-item bottom-line">Window Grills - Windows MS
+                                                            Grills with
+                                                            Enamel Paint as per client requirement at ₹130 per sqft</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="package-container-2 ">
+                                                    <ul class="list budgetD hidden">
+                                                        <li class="list-item bottom-line">Overhead Tank - Sintex Double
+                                                            Layered 1000
+                                                            ltrs</li>
+                                                        <li class="list-item bottom-line">Underground Sump - 4000 litres
+                                                        </li>
+                                                        <br></br>
+                                                        <li class="list-item bottom-line">Staircase Railing - MS
+                                                            Railin<br></br></li>
+                                                    </ul>
+                                                    <ul class="list basicD ">
+                                                        <li class="list-item bottom-line">Overhead Tank - Sintex Double
+                                                            Layered 1500
+                                                            ltrs</li>
+                                                        <li class="list-item bottom-line">Underground Sump - 6000 litres
+                                                        </li>
+                                                        <li class="list-item bottom-line">Staircase Railing - MS
+                                                            Railin<br></br></li>
+                                                        <li class="list-item bottom-line">Window Grills - Basic MS
+                                                            Grills with
+                                                            Enamel Paint at Rs.110 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list classicD hidden">
+                                                        <li class="list-item bottom-line">Overhead Tank - Sintex Double
+                                                            Layered 1500
+                                                            ltrs</li>
+                                                        <li class="list-item bottom-line">Underground Sump - 6000 litres
+                                                        </li>
+                                                        <li class="list-item bottom-line">Staircase Railing - MS
+                                                            Railin<br></br></li>
+                                                        <li class="list-item bottom-line">Window Grills - Basic MS
+                                                            Grills with
+                                                            Enamel Paint at Rs.110 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list PremiumD hidden">
+                                                        <li class="list-item bottom-line">Overhead Tank - Sintex Triple
+                                                            Layered 1500
+                                                            ltrs</li>
+                                                        <li class="list-item bottom-line">Underground Sump - 7000 litres
+                                                        </li>
+                                                        <li class="list-item bottom-line">Staircase Railing - MS
+                                                            Railings with sal
+                                                            wood hand rail</li>
+                                                        <li class="list-item bottom-line">Window Grills - Basic MS
+                                                            Grills with
+                                                            Enamel Paint at Rs.110 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list RoyalD hidden">
+                                                        <li class="list-item bottom-line">Overhead Tank - Sintex Triple
+                                                            Layered 2000
+                                                            ltrs</li>
+                                                        <li class="list-item bottom-line">Underground Sump - 7000 litres
+                                                        </li>
+                                                        <li class="list-item bottom-line">Staircase Railing - MS
+                                                            Railings with teak
+                                                            wood hand rail</li>
+                                                        <li class="list-item bottom-line">Window Grills - Windows MS
+                                                            Grills with
+                                                            Enamel Paint as per client requirement at ₹130 per sqft</li>
+                                                    </ul>
+                                                    <ul class="list ImperiaD hidden">
+                                                        <li class="list-item bottom-line">Overhead Tank - Sintex Triple
+                                                            Layered 2000
+                                                            ltrs</li>
+                                                        <li class="list-item bottom-line">Underground Sump - 8000 litres
+                                                        </li>
+                                                        <li class="list-item bottom-line">Staircase Railing - SS
+                                                            (Stainless Steel)
+                                                            Railing</li>
+                                                        <li class="list-item bottom-line">Window Grills - Windows MS
+                                                            Grills with
+                                                            Enamel Paint as per client requirement at ₹130 per sqft</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- end of panel -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Pre-Footer-->
+    <section class="section_padding_pre-footer">
+        <div class="container overall">
+            <div class="pre-footer_text">
+                <h2 class="font_family_oswald">Hire the best construction services</h2>
+                <div class="row feature">
+                    <div class="col-sm-2 feature_single">
+                        <div class="flex-container">
+                            <div class="flex-child">
+                                <img src="img/icon/Icon_3.svg" />
+                            </div>
+                            <div class="h2 flex-child">100</div>
+                        </div>
+                        <p>Total Units</p>
+                    </div>
+                    <div class="vl2"></div>
+                    <div class="col-sm-2 feature_single">
+                        <div class="flex-container">
+                            <div class="flex-child">
+                                <img src="img/icon/Icon_1.svg" />
+                            </div>
+                            <div class="h2 flex-child">220</div>
+                        </div>
+                        <p>Quality Checks</p>
+                    </div>
+                    <div class="vl2"></div>
+                    <div class="col-sm-2 feature_single">
+                        <div class="flex-container">
+                            <div class="flex-child">
+                                <img src="img/icon/Icon_4.svg" />
+                            </div>
+                            <div class="h2 flex-child">10</div>
+                        </div>
+                        <p>Years Warranty</p>
+                    </div>
+                </div>
+
+                <div class="pre-footer_btn">
+                    <a class="btn_2" href="contact.html">LET'S BUILD</a>
+                </div>
+            </div>
+
+        </div>
+        <figure class="lets-build__illustration">
+            <div class="lazyload-wrapper"><img src="images/Hire.png"></div>
+        </figure>
+    </section>
+    <!--Pre-Footer-->
+    <!-- footer part start-->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row justify-content-between">
+
+                <div class="col-xl-3 col-sm-6 col-md-4 side-side">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Site Map</h4>
+                        <div class="contact_info">
+                            <ul>
+                                <li>
+                                    <a href="index.html#howitwork">How it Works</a>
+                                </li>
+                                <li>
+                                    <a href="project.html">Our Projects</a>
+                                </li>
+                                <li>
+                                    <a href="cost_estimator.html">Cost Estimator</a>
+                                </li>
+                                <li>
+                                    <a href="index.html#ourservices">Our Services</a>
+                                </li>
+                                <li>
+                                    <a href="quality.html">Quality Elevation</a>
+                                </li>
+                                <li>
+                                    <a href="about.html">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-3 col-sm-6 col-md-4 side-side">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Others</h4>
+                        <div class="contact_info">
+                            <ul>
+                                <li>
+                                    <a href="join_professional.html">Join us as a professional</a>
+                                </li>
+                                <li>
+                                    <a href="referral.html">Refer a friend</a>
+                                </li>
+                                <li>
+                                    <a href="contact.html">For commercial</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <h4 style="margin-top: 30px;">Information</h4>
+                        <div class="contact_info">
+                            <ul>
+                                <li>
+                                    <a href="terms_conditions.html">Terms & Conditions</a>
+                                </li>
+                                <li>
+                                    <a href="privacy_policy.html">Privacy policy</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="cancellation.html">Cancellation Policy</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-sm-6 col-md-4">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Contact info</h4>
+                        <div class="contact_info">
+                            <!-- <p></p> -->
+                            <p><span> Address :</span> B-19/14 Sector 71 Noida,
+                                U.P. - 201301, India </p>
+                            <p><span> Phone :</span> +91 9560680737</p>
+                            <p><span> Email : </span>getintouch@canstruct.in </p>
+                            <p>&#169; 2020 Canstruct All rights reserved.</p>
+                        </div>
+                    </div>
+                    <div class="">
+                        <ul class="social-network social-circle">
+                            <!-- <li><a href="#" class="icoYt" title="Youtube"><i class="fa fa-youtube-play""></i></a></li> -->
+                            <!-- <li><a href="https://www.facebook.com/canstructindia/?view_public_for=101924851693907"  title="Facebook_" target="_blank"><img src="images/fb.png" style="height:50px;"></a></li>
+                        <li><a href="https://www.linkedin.com/company/homeconstruction/?viewAsMember=true"  title="Linekdin" target="_blank"><img src="images/linkedin.png" style="height:50px;"></a></li>
+                        <li><a href="https://www.homify.in/professionals/8208802/canstruct"  title="Homify" target="_blank"><img src="images/homify.png" style="height:50px;"></a></li>
+                        <li><a href="https://www.houzz.in/professionals/civil-engineers-and-contractors/canstruct-pfvwin-pf~1228927535?"  title="Houzz" target="_blank"><img src="images/houzz.png" style="height:50px;"></a></li>
+                         -->
+                            <li><a href="https://www.linkedin.com/company/homeconstruction/?viewAsMember=true"
+                                    class="icoYt" title="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="https://www.facebook.com/canstructindia/?view_public_for=101924851693907"
+                                    class="icoFacebook" title="Facebook" target="_blank"><i
+                                        class="fa fa-facebook"></i></a></li>
+                            <!-- <li><a href="#" class="icoGoogle" title="Google +"  target="_blank"><i class="fa fa-google-plus"></i></a></li> -->
+                        </ul>
+                        </ul>
+                    </div>
+                    <div style="height:20px;"></div>
+                    <div>
+                        <a href="https://www.homify.in/professionals/8208802/canstruct" target="_blank"><img
+                                style="border: 3px solid #000;border-radius: 5px solid #000;" alt="Canstruct on homify"
+                                src="https://www.homify.in/assets/badges/standard/90x32_white.png" / width="172"
+                                height="50px"></a>
+                        <a href="https://www.houzz.in/pro/canstruct/canstruct" target="_blank"><img
+                                style="border: 2px solid #000;"
+                                src="https://st.hzcdn.com/static_en-IN/badge86_25_gs@2x.png"
+                                alt="canstruct in Noida, Uttar Pradesh, IN on Houzz" width="172" height="50"
+                                border="0" /></a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!-- footer part end-->
+
+    <!-- Modal -->
+    <div id="uniqueModal" class="unique-modal">
+        <div class="unique-modal-content">
+            <span class="unique-close">&times;</span>
+            <div style="margin-bottom: 20px; text-align: center; background-color: #f9b700; font-size: 24px;">Contact
+                Details</div>
+            <div class="site-small-container">
+                <p style="margin-bottom: 10px;">Receive a  Quotation: Provide Your Email and Phone Number</p style="margin-bottom: 10px;">
+                <!-- Rest of the form and content -->
+            </div>
+            <form id="uniqueDataForm">
+                <div class="form__group ">
+                    <div class="input-wrapper"><input type="email" id="uniqueEmail" class="form__field"
+                            placeholder="Enter your email address"><label for="email" class="form__label">Email
+                            Address:</label></div>
+                </div>
+                <br>
+                <div class="form__group input">
+                    <div class="input-wrapper"><input type="number" id="uniqueNumber" class="form__field"
+                            placeholder="Enter your 10 digit mobile number"><label for="number"
+                            class="form__label">Mobile Number:</label></div>
+                </div>
+
+                <br>
+                <div class="form__action__btns modal_button">
+                    <button class="btn_1" type="submit">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal -->
+
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- isotope js -->
+    <script src="js/isotope.pkgd.min.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+
+    <script src="js/cost-calculate.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const openUniqueModalButton = document.getElementById("openUniqueModal");
+            const uniqueModal = document.getElementById("uniqueModal");
+            const uniqueCloseButton = document.querySelector(".unique-close");
+            const uniqueDataForm = document.getElementById("uniqueDataForm");
+
+            openUniqueModalButton.addEventListener("click", () => {
+                const lastSavedTime = localStorage.getItem("lastSavedTime");
+
+                if (lastSavedTime) {
+                    const currentTime = new Date().getTime();
+                    const sixHoursInMilliseconds = 6 * 60 * 60 * 1000; // 6 hours in milliseconds
+
+                    if (currentTime - lastSavedTime <= sixHoursInMilliseconds) {
+                        // If data was saved less than 6 hours ago, directly perform calculate
+                        calculate();
+                    } else {
+                        // If data was saved more than 6 hours ago, open the modal
+                        uniqueModal.style.display = "block";
+                    }
+                } else {
+                    // If no data saved previously, open the modal
+                    uniqueModal.style.display = "block";
+                }
+            });
+
+            uniqueCloseButton.addEventListener("click", () => {
+                uniqueModal.style.display = "none";
+            });
+
+            uniqueDataForm.addEventListener("submit", (e) => {
+                e.preventDefault();
+
+                const email = document.getElementById("uniqueEmail").value;
+                const number = document.getElementById("uniqueNumber").value;
+
+                // Save data to localStorage
+                localStorage.setItem("email", email);
+                localStorage.setItem("number", number);
+                localStorage.setItem("lastSavedTime", new Date().getTime());
+
+                // Close the modal
+                uniqueModal.style.display = "none";
+
+                // Perform calculate function
+                calculate();
+            });
+        });
+    </script>
+</body>
+
+</html>

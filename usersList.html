@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            border: 1px solid #ccc;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 0.5rem 0;
+            padding: 1rem;
+            border: 1px solid #ccc;
+            background-color: #f4f4f4;
+        }
+        .login-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        .login-input {
+            padding: 0.5rem;
+            margin: 0.5rem;
+            width: 200px;
+        }
+        .login-button {
+            padding: 0.5rem;
+            margin-top: 1rem;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>User List</h1>
+    </header>
+    <div class="container">
+        <div id="loginContainer" class="login-container">
+            <h2>Login</h2>
+            <input id="secretKey" class="login-input" type="password" placeholder="Enter secret key">
+            <button id="loginButton" class="login-button">Login</button>
+        </div>
+        <div id="userListContainer" style="display: none;">
+            <h2>Users:</h2>
+            <ul id="userList"></ul>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA-nToRSJsoR0oJt28ScieqWnvlkmYpyfA",
+            authDomain: "canstruct-739a4.firebaseapp.com",
+            databaseURL: "https://canstruct-739a4.firebaseio.com",
+            projectId: "canstruct-739a4",
+            storageBucket: "canstruct-739a4.appspot.com",
+            messagingSenderId: "237440303012",
+            appId: "1:237440303012:web:14192d19987b3b570dcb31",
+            measurementId: "G-V53QMMT3F9"
+        };
+
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.database();
+        const loginContainer = document.getElementById('loginContainer');
+        const secretKeyInput = document.getElementById('secretKey');
+        const loginButton = document.getElementById('loginButton');
+        const userListContainer = document.getElementById('userListContainer');
+        const userList = document.getElementById('userList');
+
+        loginButton.addEventListener('click', () => {
+            const secretKey = secretKeyInput.value;
+            if (secretKey === "DqFxfXLP92") {
+                loginContainer.style.display = 'none';
+                userListContainer.style.display = 'block';
+                localStorage.setItem('loggedIn', 'true'); // Save login status
+                fetchUserList();
+            }
+        });
+
+        function fetchUserList() {
+            const usersRef = db.ref('userData');
+            usersRef.once('value', (snapshot) => {
+                userList.innerHTML = ''; // Clear previous user list
+                snapshot.forEach((childSnapshot) => {
+                    const user = childSnapshot.val();
+                    const userItem = document.createElement('li');
+                    userItem.textContent = `Email: ${user.email}, Number: ${user.number}`;
+                    userList.appendChild(userItem);
+                });
+            });
+        }
+
+        // Check for saved login status when page loads
+        window.addEventListener('load', () => {
+            const loggedIn = localStorage.getItem('loggedIn');
+            if (loggedIn === 'true') {
+                loginContainer.style.display = 'none';
+                userListContainer.style.display = 'block';
+                fetchUserList();
+            }
+        });
+    </script>
+</body>
+</html>
